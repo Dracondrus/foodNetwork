@@ -1,0 +1,207 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+ 
+ul,
+li {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+:focus {
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+  }
+
+img {
+    width: 100%;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+    padding-top: 30px;
+   
+}
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+:root {
+    --ffPhi: "Philosopher";
+    --ffRO: "Roboto";
+    --fw700: 700;
+    --fw500: 500;
+    --fw400: 400;
+    --fz48: 48px;
+    --fz30: 30px;
+    --fz24: 24px;
+    --fz18: 18px;
+    --fz16: 16px;
+    --fz14: 14px;
+    --fsNormal: normal;
+    --lh57: 57px;
+    --lh40: 40px;
+    --lh24: 24px;
+    --backgroundColor: rgba(220, 120, 11, 1);
+    --colorOrange: #DC780B;
+    --colorWhite: #fff;
+}
+.txt__style_48px {
+    font-size: var(--fz48);
+font-family: var(--ffPhi);
+font-style: var(--fsNormal);
+font-weight: var(--fw700);
+line-height: var(--lh57); 
+}
+.txt__style_30px {
+    line-height: var(--lh40);
+    font-size: var(--fz30);
+font-family: var(--ffPhi);
+font-style: var(--fsNormal);
+font-weight: var(--fw700);
+line-height: var(--lh24); 
+}
+.txt__style_24px {
+    font-size: var(--fz24);
+font-family: var(--ffPhi);
+font-style: var(--fsNormal);
+font-weight: var(--fw700);
+line-height: var(--lh24); 
+}
+.txt__style_16px {
+    font-size: var(--fz16);
+font-family: var(--ffRO);
+font-style: var(--fsNormal);
+font-weight: var(--fw400);
+line-height: var(--lh24); 
+}
+.txt__style_16pxColor {
+    color: var(--colorOrange);
+    font-size: var(--fz16);
+font-family: var(--ffRO);
+font-style: var(--fsNormal);
+font-weight: var(--fw400);
+line-height: var(--lh24); 
+}
+.txt__style_14px {
+    font-size: var(--fz14);
+font-family: var(--ffRO);
+font-style: var(--fsNormal);
+font-weight: var(--fw400);
+line-height: var(--lh24); 
+}
+.opacity {
+    opacity: 0.6;
+}
+
+.active {
+    color: var(--colorOrange);
+    font-weight: var(--fw500)
+}
+.menu__link:hover {
+    color: var(--colorOrange);
+    font-weight: var(--fw500)
+}
+.txt__center {
+    text-align: center;
+}
+.btn__style {
+    border-radius: 5px;
+background: var(--backgroundColor );
+color: var(--colorWhite);
+}
+
+.wrapper .btn__style_hover:hover {
+ 
+    border-radius: 14px;
+    opacity: 0.7;
+}
+
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: #f89122;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-animation: rotation 0.4s linear infinite;
+            animation: rotation 0.4s linear infinite;
+    }
+
+    @-webkit-keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+    }
+
+    @keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+    } 
+
+.hide {
+    opacity: 0;
+}
